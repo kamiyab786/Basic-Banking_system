@@ -1,39 +1,106 @@
 # Basic-Banking-System
 
-**Sparks Foundation Internship Project:** ***Basic Banking System***
+***Basic Banking System***
 
-A Web Application used to transfer money between multiple users (Project contains 10 dummy users). A dummy user can also be created.
+This is a dynamic and user-friendly web application that simplifies money transfers between users. The application is designed with scalability and security in mind, allowing users to perform essential banking functions such as viewing user details, transferring funds, and tracking transaction histories. It is built using modern web technologies and adheres to best practices for seamless user experience and efficient database management.
 
-**Stack used:**
-- Front-end : HTML, CSS, Bootstrap, AngularJS
-- Back-end : NodeJs , ExpressJs ,MongoDB
+---
 
-Database contains two Tables- Customers Table & Transaction History Table
+## **Features**
+- **User Management**:  
+  Easily view all users, select individual profiles, and access their details.
+- **Fund Transfers**:  
+  Enable secure and smooth transfer of funds between users by selecting a sender and receiver.
+- **Transaction History**:  
+  Maintain a detailed log of all transactions, including sender, receiver, transfer amount, and timestamp.
+- **Scalability**:  
+  New users can be added to the system effortlessly to meet growing demands.
+- **Responsive Design**:  
+  The application is optimized for devices of all sizes using Bootstrap.
 
-Customers table have basic fields such as name, email & current balance.
-Transaction History table records all transfers happened along with their time.
-Flow of the Website: Home Page > View all Users > Select and View one User > Transfer Money > Select reciever > View all Users > View Transfer History.
+---
 
-**How To Run Project:-**
+## **Technology Stack**
+### **Front-End**
+- HTML, CSS, Bootstrap, AngularJS
 
- 1. Install NodeJs
- 2. Install MongoDB And MongoDB Compass
-    - Connect MongoDB Compass with localhost
-    - Create Database with Name "myproject"
-    - Collection Name "sparkbank"
-    - Add Dummy data with field  
-      - "name" dataType : String 
-      - "email" dataType : String 
-      - "balance" dataType : Int32
- 3. In Project File Open Terminal/CMD/PowerShell
- 4. type npm init
- 5. type npm install mongoose
- 6. type npm install express
- 7. type node server.js
- 8. Open Browser Use This Link to Run Project 'http://localhost:2800'.
+### **Back-End**
+- Node.js, Express.js, MongoDB
 
-![1](https://user-images.githubusercontent.com/50388943/115108780-eff6ca00-9f8f-11eb-8aac-b8147d9abb33.png)
-![2](https://user-images.githubusercontent.com/50388943/115108781-f127f700-9f8f-11eb-98bf-44cccdf10a15.png)
-![5](https://user-images.githubusercontent.com/50388943/115108785-f84f0500-9f8f-11eb-9d7a-4e5cfd269349.png)
-![3](https://user-images.githubusercontent.com/50388943/115108792-000ea980-9f90-11eb-8dde-ad6c75e87ab3.png)
-![4](https://user-images.githubusercontent.com/50388943/115108795-013fd680-9f90-11eb-80c6-37705874809b.png)
+---
+
+## **Database Structure**
+The application uses MongoDB to store and manage data:
+1. **Customers Table**:  
+   Stores essential user information:
+   - `name`: The user's name (String).  
+   - `email`: The user's email address (String).  
+   - `balance`: The user's current account balance (Int32).  
+   
+2. **Transaction History Table**:  
+   Tracks all transaction details:
+   - Sender's name.  
+   - Receiver's name.  
+   - Amount transferred.  
+   - Timestamp of the transaction.
+
+---
+
+## **Website Flow**
+The application provides a step-by-step process for users:
+1. **Home Page**:  
+   Introduction to the system with navigation options.  
+2. **View All Users**:  
+   Display a list of all registered users.  
+3. **Select and View a User**:  
+   Access details of a specific user, including account balance.  
+4. **Transfer Money**:  
+   Initiate a fund transfer by selecting a sender and receiver.  
+5. **View Transfer History**:  
+   Track all past transactions with complete details.
+
+---
+
+## **How to Run the Project**
+
+### **Pre-Requisites**
+1. Install **Node.js**
+2. Install **MongoDB** and **MongoDB Compass**
+
+---
+
+### **Steps to Setup**
+1. **Setup MongoDB**:  
+    - Connect MongoDB Compass to **`localhost`**.  
+    - Create a database named **`myproject`**.  
+    - Create a collection named **`sparkbank`**.  
+    - Insert dummy user data with the following fields:  
+      - `name` (String)  
+      - `email` (String)  
+      - `balance` (Int32)
+
+2. **Run the Project**:
+    - Open the project folder in **Terminal/Command Prompt/PowerShell**.
+    - Run the following commands:
+      ```bash
+      npm init
+      npm install mongoose
+      npm install express
+      node server.js
+      ```
+    - Open a browser and navigate to **`http://localhost:2800`**.
+
+---
+
+## **Screenshots**
+### Home Page
+![Home Page](https://user-images.githubusercontent.com/50388943/115108780-eff6ca00-9f8f-11eb-8aac-b8147d9abb33.png)
+
+### View All Users
+![View All Users](https://user-images.githubusercontent.com/50388943/115108781-f127f700-9f8f-11eb-98bf-44cccdf10a15.png)
+
+### Transfer Money
+![Transfer Money](https://user-images.githubusercontent.com/50388943/115108785-f84f0500-9f8f-11eb-9d7a-4e5cfd269349.png)
+
+### Transaction History
+![Transaction History](https://user-images.githubusercontent.com/50388943/115108792-000ea980-9f90-11eb-8dde-ad6c75e87ab3.png)
